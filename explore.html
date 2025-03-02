@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-sky-50 w-full h-full">
+    <!-- under these section all elemment are here -->
+    <section class="w-[90%] mx-auto pt-8">
+        <!-- navigation bar -->
+    <header>
+    <div class="navbar bg-base-100 shadow-sm rounded-md p-4">
+        <div class="flex-1">
+            <div class="flex items-center gap-2">
+                 <img class="w-10" src="assets/logo.png" alt="">
+                 <a class="text-xl">Dev<span class="font-bold">Board</span></a>
+            </div>
+         
+        </div>
+          
+            
+              <!-- buttom -->
+               
+                    <h1 id="back"  class=" btn rounded-md border-none w-35 shadow-sm bg-violet-600 text-base text-zinc-50 ">Back to Desk</h1>
+                
+                
+              
+            
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <h1 class="text-center text-xl font-bold p-3">Blogs</h1>
+
+
+<!-- questions -->
+
+
+    <div class="pb-4">
+        <div class="bg-white font-bold text-xl p-4 rounded-md border-b border-dashed border-gray-300">
+            <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
+        </div>
+        <div class="text-gray-500 text-xl p-4 bg-white rounded-md mb-4">
+            <h1>There are many ways to select an element in the DOM.We can use getElementById,getElementsByClassName,getElementByTagName,quarrySelactor,quarrySelactorAll etc. </h1>
+        </div>
+    
+    
+    
+        <div class="bg-white font-bold text-xl p-4 rounded-md border-b border-dashed border-gray-300">
+            <h1>Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+        </div>
+        <div class="text-gray-500 text-xl p-4 bg-white rounded-md mb-4">
+            <h1>innerHTML is the Html content of an element and the innerText is the text content of a html tag.TextContent are Specifies the text content of an element and its child nodes. It includes all the text, but without CSS styling</h1>
+    
+        </div>     
+    
+    
+        <div class="bg-white font-bold text-xl p-4 rounded-md border-b border-dashed border-gray-300">
+            <h1>Question-3: What is event delegation in the DOM?</h1>
+        </div>
+        <div class="text-gray-500 text-xl p-4 bg-white rounded-md mb-4">
+            <h1>Event delegation is a versatile technique and it can help to write more efficient code by using DOM</h1>
+        </div>
+    
+    
+        <div class="bg-white font-bold text-xl p-4 rounded-md border-b border-dashed border-gray-300">
+            <h1>Question-4: What is event bubbling in the DOM?</h1>
+        </div>
+        <div class="text-gray-500 text-xl p-4 bg-white rounded-md mb-4">
+            <h1>it makes the code more efficient and easier to manage, especially when dealing with a large number of elements or elements added dynamically.</h1>
+        </div>
+    
+    
+        <div class="bg-white font-bold text-xl p-4 rounded-md border-b border-dashed border-gray-300">
+            <h1>Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+        </div>
+        <div class="text-gray-500 text-xl p-4 bg-white rounded-md mb-8">
+            <h1>I will use .createElement() to create , .appendchild() to add something and .remove() to remove elements using Javascript.</h1>
+        </div>
+    </div>
+
+    <script>
+       document.getElementById("back").onclick = function() {
+       window.location.href = "index.html";
+       };
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
