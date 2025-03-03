@@ -15,11 +15,7 @@ document.getElementById('color').addEventListener('click', function themes() {
 
 
 
-    //   clear button
-        document.getElementById('clear-btn').addEventListener('click', function () {
-        document.getElementById('comment-box').innerText = "";
-        })
-
+    
 
 
 
@@ -63,12 +59,22 @@ document.getElementById('color').addEventListener('click', function themes() {
     
         var cardTitle = this.closest('.get-title').querySelector('h1').textContent;
         
-        var comment = document.createElement('div');
+        let comment = document.createElement('div');
+        comment.id='newDiv';
         comment.classList.add('comment', 'p-3', 'border-b', 'border-dashed', 'border-gray-300');
-        
+    
         comment.innerHTML = cardTitle + ' Task completed successfully at ' + currentDate.toLocaleTimeString();
+       
+        let father= clearHistorySection.appendChild(comment);
+        const parent=document.getElementById('holeComment')
+        parent.appendChild(father);
         
-        clearHistorySection.appendChild(comment);
+
     });
 }
 
+//   clear button
+    document.getElementById('clear-btn').addEventListener('click', function () {
+    
+    document.getElementById('holeComment').innerText = "";
+    })
