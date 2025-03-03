@@ -16,39 +16,34 @@ document.getElementById('color').addEventListener('click', function themes() {
 
 
     
-
-
-
-
-
-
-
-
-
-
        
     let completeButtons = document.querySelectorAll('.coco-card');
     let clearHistorySection = document.querySelector('.comment-aside');
     const button = document.getElementById("amarBtn");
 
 
-    for (var i = 0; i < completeButtons.length; i++) {
+    for (let i = 0; i < completeButtons.length; i++) {
     completeButtons[i].addEventListener('click', function(){
         
         alert("Completed the task?");
 
+
+        button.disabled = true;
+        button.style.backgroundColor = 'gray';
+    
+
     
 
         const reCounterElement = document.getElementById("rCounter");
-        const buttons = document.querySelectorAll("#amarBtn");
+        
 
         let reCounter = parseInt(reCounterElement.innerText);
         reCounter--;
         reCounterElement.textContent = '0'+reCounter;
+
+        
         
         const counterElement = document.getElementById("counter");
-        const Button = document.querySelectorAll("#amarBtn");
-
         let counter = parseInt(counterElement.innerText);
         counter++;
         counterElement.textContent = counter;
